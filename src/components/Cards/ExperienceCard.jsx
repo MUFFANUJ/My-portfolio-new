@@ -146,6 +146,8 @@ const Skill = styled.div`
 
 
 const ExperienceCard = ({ experience }) => {
+    const aspectRatio = 0.9; 
+    const paddingBottom = `${(aspectRatio * 100)}%`;
     return (
         <Card sx={{ position: 'relative' }}>
             <Top>
@@ -181,8 +183,30 @@ const ExperienceCard = ({ experience }) => {
                 <a href={experience.doc} target="new">
                     <Image src={experience.doc} />
                     {experience.video && 
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7152759321687166976?compact=1" height="339" width="610" frameborder="0" allowfullscreen="" title="Embedded post"/>
+                    <div className="iframe-container">
+      <iframe
+        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7152759321687166976?compact=1"
+        frameborder="0"
+        allowfullscreen=""
+        title="Embedded post"
+      />
+      <style jsx>{`
+        .iframe-container {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: ${paddingBottom};
+          height: 0;
+        }
 
+        .iframe-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      `}</style>
+    </div>
                     }
                     
                 </a>
