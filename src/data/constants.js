@@ -1,13 +1,13 @@
 export const Bio = {
   name: "Anuj Kumar Singh",
   roles: [
-    "Front End Developer",
+    "Frontend Developer",
     "AI ML Enthusiast",
     "UI/UX Designer",
     "Programmer",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning, I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/MUFFANUJ",
   resume:
     "https://docs.google.com/document/d/18xZY8rECWdbbX0Zs9DtWt0OzWjd8C1JU-x3uq8IKXKg/edit?usp=sharing",
